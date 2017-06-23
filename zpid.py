@@ -28,7 +28,7 @@ import re
 
 # VERSION 1
 for i in range(20001,20456):
-    # print(i, "\n",'-----')
+    print("\n", i, "\n", '----')
     for j in range(1,21):
 
         ZILLOW_URL = "https://www.zillow.com/homes/%s_rb/%s_p/" % (i,j)
