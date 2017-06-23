@@ -57,7 +57,7 @@ for i in rid:
     print("\n", i, "\n", '--sold--')
     for j in range(1,21):
 
-        ZILLOW_URL = "https://www.zillow.com/homes/recently_sold/Washington-DC-20001/%s_rid/90_days/" % (i)
+        ZILLOW_URL = "https://www.zillow.com/homes/recently_sold/Washington-DC-20001/%s_rid/90_days/%s_p/" % (i,j)
         response = requests.get(ZILLOW_URL)
         html_doc = response.text
         soup = BeautifulSoup(html_doc, 'html.parser')
