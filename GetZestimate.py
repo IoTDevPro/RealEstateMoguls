@@ -26,7 +26,6 @@ for line in readfile:
     response = requests.get(API_CALL)
 
     a.append(response.text)
-    rcontent = response.content
 
 def timeIzNow():
     '''
