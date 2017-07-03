@@ -10,7 +10,7 @@ import time
 from datetime import date
 
 # Remember to change the filename
-readfile = open("ZPID2.txt", "r")
+readfile = open("Darius_Monday.txt", "r")
 
 a=[]
 
@@ -26,6 +26,8 @@ for line in readfile:
     response = requests.get(API_CALL)
 
     a.append(response.text)
+
+    print(len(a))
 
 def timeIzNow():
     '''
